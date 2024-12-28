@@ -15,3 +15,9 @@ jobs:
 
     - name: Compile mtftar
       run: make
+
+    - name: Upload mtftar artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: mtftar
+        path: ./mtftar
